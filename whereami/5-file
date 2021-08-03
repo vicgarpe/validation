@@ -1,0 +1,15 @@
+#!/bin/bash
+
+FILE="\*\\'"DevOps"\'\\*$\?\*\*\*\*\*:)"
+
+if [[ -f $FILE ]]
+then
+  rm $FILE
+  echo "Boramos existente"
+fi
+
+touch $FILE
+
+echo -e "Hello DevOps\n" > $FILE
+
+

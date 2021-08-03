@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Creamos el directorio destion
+mkdir -p /tmp/u
+
+#Movemos todos los archivos que inician por mayuscula a este directorio
+mv [A-Z]* /tmp/u

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Creamos el archivo hello, en caso de existir lo borramos
+if [[ -f "hello" ]]
+then
+   echo "Borramos archivo existente"
+   rm "hello"
+fi
+
+touch "hello"
+
+# Otorgamos los permisos requeridos
+chmod 754 "hello"
+#chmod  u+rwx,g+r-w+x,o+r-wx hello
+
+
